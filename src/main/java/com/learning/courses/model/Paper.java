@@ -36,5 +36,6 @@ public class Paper {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "tutor_id")
+
     private Person tutor;
 }

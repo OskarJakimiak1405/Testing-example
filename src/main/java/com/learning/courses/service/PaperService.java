@@ -25,5 +25,4 @@ public class PaperService {
                 .orElseThrow(() -> new RuntimeException("Tutor not found or person is not a tutor!"));
     }
 
-    // Pozostałe metody: get, update, delete...
 }

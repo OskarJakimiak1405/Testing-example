@@ -49,5 +49,4 @@ public class Person {
     papers.add(paper);
     paper.setTutor(this);
   }
-
 }
