@@ -44,5 +44,12 @@ public class Person {
 
   @OneToMany(cascade = CascadeType.ALL, mappedBy = "person", orphanRemoval = true)
   private List<Contact> contacts;
+  @OneToMany(cascade = CascadeType.ALL, mappedBy = "tutor", orphanRemoval = true)
+  private List<Paper> papers;
+
+  public void addPaper(Paper paper) {
+    papers.add(paper);
+    paper.setTutor(this);
+  }
 
 }
